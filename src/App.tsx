@@ -4,7 +4,7 @@ export default function App() {
   const baseUrl = import.meta.env.BASE_URL;
   const logoImageUrl = `${baseUrl}images/wetop-logo-red.png`;
   const heroImageUrl = `${baseUrl}images/wetop-pict-hero.webp`;
-  const reactChainImageUrl = `${baseUrl}images/pict-core-mechanism.jpg`;
+  const purificationFlowchartImageUrl = `${baseUrl}images/pict-purification-flowchart.jpg`;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -169,7 +169,7 @@ export default function App() {
 
       <section className="image-text-section">
         <div className="visual-pane">
-          <img src={reactChainImageUrl} alt="PICT 核心反應機制圖" />
+          <img src={purificationFlowchartImageUrl} alt="PICT 淨化因子流程圖" />
         </div>
         <div className="copy-pane">
           <div className="kicker">PICT / AOP / ROS</div>
