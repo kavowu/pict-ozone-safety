@@ -1221,6 +1221,23 @@
       max-width: 340px;
     }
 
+    .split-section {
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+      column-gap: 42px;
+      row-gap: 0;
+    }
+
+    .split-section .kicker,
+    .split-section h2,
+    .split-section > p:first-of-type {
+      grid-column: 1;
+    }
+
+    .issue-grid {
+      grid-column: 2;
+      grid-row: 1 / span 3;
+    }
+
     .image-text-section {
       grid-template-columns: 1.08fr 0.92fr;
       gap: 60px;
