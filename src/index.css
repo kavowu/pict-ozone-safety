@@ -463,6 +463,11 @@
   }
 
   .site-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -477,6 +482,7 @@
     color: #0f2742;
     display: inline-flex;
     align-items: center;
+    flex-shrink: 0;
   }
 
   .brand-logo {
@@ -486,6 +492,10 @@
   }
 
   .nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: auto;
     padding: 8px;
     border: 1px solid rgba(15, 23, 42, 0.12);
     border-radius: 999px;
