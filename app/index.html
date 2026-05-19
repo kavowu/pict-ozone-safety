@@ -13,8 +13,15 @@
     <meta name="description" content="PICT 技術面對臭氧存在的專業答覆：重點不是迴避臭氧，而是如何控制臭氧並避免 NO₂。" />
     <title>WETOP PICT 技術與臭氧安全專業答覆</title>
     <script>
+      const DEPLOY_VERSION = '20260519-3';
       if (location.pathname === '/pict-ozone-safety/' || location.pathname === '/pict-ozone-safety') {
-        location.replace('/pict-ozone-safety/docs/');
+        location.replace(`/pict-ozone-safety/docs/?v=${DEPLOY_VERSION}`);
+      }
+      if (location.pathname === '/pict-ozone-safety/docs/' && !new URLSearchParams(location.search).has('v')) {
+        const params = new URLSearchParams(location.search);
+        params.set('v', DEPLOY_VERSION);
+        const hash = location.hash || '';
+        location.replace(`${location.pathname}?${params.toString()}${hash}`);
       }
     </script>
   </head>
