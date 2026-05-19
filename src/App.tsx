@@ -1,9 +1,10 @@
 import { Gauge, Microscope } from 'lucide-react';
 
 export default function App() {
-  const logoImageUrl = '/images/wetop-logo-red.png';
-  const heroImageUrl = '/images/wetop-pict-hero.webp';
-  const reactChainImageUrl = '/images/pict-core-mechanism.jpg';
+  const baseUrl = import.meta.env.BASE_URL;
+  const logoImageUrl = `${baseUrl}images/wetop-logo-red.png`;
+  const heroImageUrl = `${baseUrl}images/wetop-pict-hero.webp`;
+  const reactChainImageUrl = `${baseUrl}images/pict-core-mechanism.jpg`;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
