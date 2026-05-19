@@ -57,7 +57,7 @@ export default function App() {
         </div>
         <div className="metric-block">
           <div className="metric-value">0.050 ppm</div>
-          <div className="metric-label">CARB 室內裝置臭氧排放規範</div>
+          <div className="metric-label">加州空氣資源局（CARB）室內裝置臭氧排放規範</div>
         </div>
         <div className="metric-block">
           <div className="metric-value">0.20-0.30 ppm</div>
@@ -100,7 +100,7 @@ export default function App() {
             <div className="label">03｜濃度控制</div>
             <h3>臭氧真正的工程問題，是避免累積到刺激性或高風險濃度。</h3>
             <p>
-              EPA 指出某些臭氧產生器在高設定與門窗關閉條件下可能頻繁產生 0.20-0.30 ppm 的室內濃度；CARB 也以 0.050 ppm 作為室內空氣清淨裝置臭氧排放規範。這些資料不是否定所有氧化技術，而是要求設備必須回答如何控制濃度。 <sup>[1]</sup> <sup>[2]</sup>
+              EPA 指出某些臭氧產生器在高設定與門窗關閉條件下可能頻繁產生 0.20-0.30 ppm 的室內濃度；加州空氣資源局（CARB）也以 0.050 ppm 作為室內空氣清淨裝置臭氧排放規範。這些資料不是否定所有氧化技術，而是要求設備必須回答如何控制濃度。 <sup>[1]</sup> <sup>[2]</sup>
             </p>
           </article>
 
@@ -243,7 +243,7 @@ export default function App() {
         <div className="kicker">References</div>
         <h2>參考資料與公開來源</h2>
         <p>
-          本網站文字以 EPA、CARB、臭氧醫療史資料與使用者附件為主要基礎。涉及安全與健康的敘述，均應視為需要依實測濃度、產品規格與使用場景進一步核對的技術說明。
+          本網站文字以 EPA、加州空氣資源局（CARB）、臭氧醫療史資料與使用者附件為主要基礎。涉及安全與健康的敘述，均應視為需要依實測濃度、產品規格與使用場景進一步核對的技術說明。
         </p>
 
         <div className="reference-list">
