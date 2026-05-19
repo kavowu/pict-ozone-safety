@@ -273,6 +273,10 @@
     align-items: center;
   }
 
+  .hero-content > * {
+    min-width: 0;
+  }
+
   @media (max-width: 1180px) {
     .hero-content {
       grid-template-columns: 1fr;
@@ -594,9 +598,13 @@
     margin: 0;
     background: linear-gradient(180deg, #f1f4f5 0%, #eef2f3 100%);
     display: grid;
-    grid-template-columns: minmax(420px, 0.95fr) minmax(620px, 1.35fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
     column-gap: 42px;
     align-items: start;
+  }
+
+  .split-section > * {
+    min-width: 0;
   }
 
   .split-section .kicker {
@@ -711,6 +719,22 @@
   @media (max-width: 1180px) {
     .image-text-section {
       grid-template-columns: 1fr;
+    }
+
+    .split-section {
+      grid-template-columns: 1fr;
+      row-gap: 18px;
+    }
+
+    .split-section .kicker,
+    .split-section h2,
+    .split-section > p:first-of-type,
+    .issue-grid {
+      grid-column: 1;
+    }
+
+    .issue-grid {
+      grid-row: auto;
     }
   }
 
