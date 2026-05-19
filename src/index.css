@@ -598,8 +598,8 @@
     margin: 0;
     background: linear-gradient(180deg, #f1f4f5 0%, #eef2f3 100%);
     display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
-    column-gap: 42px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
     align-items: start;
   }
 
@@ -615,14 +615,12 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     width: 100%;
-    grid-column: 1;
   }
 
   .split-section h2 {
     margin-bottom: 1rem;
     width: 100%;
     max-width: 100%;
-    grid-column: 1;
     font-size: clamp(3rem, 4.8vw, 5.2rem);
     line-height: 1.14;
     letter-spacing: -0.018em;
@@ -636,7 +634,6 @@
     margin-bottom: 36px;
     width: 100%;
     max-width: 100%;
-    grid-column: 1;
   }
 
   .issue-grid {
@@ -646,8 +643,6 @@
     margin-top: 0;
     width: 100%;
     max-width: none;
-    grid-column: 2;
-    grid-row: 1 / span 3;
   }
 
   .issue-pair {
