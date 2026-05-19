@@ -631,10 +631,11 @@
     margin-bottom: 1rem;
     width: 100%;
     max-width: 100%;
-    font-size: clamp(3rem, 4.8vw, 5.2rem);
-    line-height: 1.14;
-    letter-spacing: -0.018em;
+    font-size: clamp(2.25rem, 4.2vw, 4.35rem);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
     word-spacing: 0.04em;
+    text-wrap: balance;
   }
 
   .split-section > p:first-of-type {
