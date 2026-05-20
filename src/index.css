@@ -1306,14 +1306,20 @@
     }
 
     .reference-item {
-      grid-template-columns: 40px 1fr;
-      gap: 12px;
+      grid-template-columns: 1fr;
+      gap: 10px;
       padding: 18px;
     }
 
     .reference-item .ref-number {
       grid-row: auto;
       font-size: 1.1rem;
+    }
+
+    .reference-item .ref-title,
+    .reference-item .ref-description {
+      overflow-wrap: break-word;
+      word-break: normal;
     }
 
     .reference-item .ref-description {
