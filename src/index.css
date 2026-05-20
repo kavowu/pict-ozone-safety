@@ -150,7 +150,7 @@
 
   h1 {
     font-size: clamp(1.95rem, 3.9vw, 4.2rem);
-    line-height: 1.08;
+    line-height: 1.22;
     font-weight: 700;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
     max-width: 1080px;
@@ -315,7 +315,8 @@
   }
 
   .hero-copy h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 0.4rem;
     font-weight: 600;
     color: #07111f;
   }
