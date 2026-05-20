@@ -1058,7 +1058,7 @@
     }
 
     .hero-section {
-      padding: 42px 20px 36px;
+      padding: 48px 24px 40px;
       min-height: calc(100vh - 64px);
     }
 
@@ -1066,79 +1066,30 @@
     .split-section,
     .image-text-section,
     .principle-section {
-      padding: 52px 20px;
+      padding: 56px 24px;
     }
 
-    .split-section .kicker,
-    .split-section h2,
-    .split-section > p:first-of-type,
-    .issue-grid {
-      width: 100%;
-    }
-
-    .split-section {
-      grid-template-columns: 1fr;
-      row-gap: 18px;
-    }
-
-    .issue-grid {
-      grid-column: 1;
-      grid-row: auto;
-    }
-
-    .nav-links {
-      gap: 1rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      padding: 6px;
-      border-radius: 12px;
-    }
-
-    .nav-links::-webkit-scrollbar {
-      display: none;
-    }
-
-    .metrics-band {
-      grid-template-columns: 1fr;
-    }
-
-    .metric-block {
-      padding: 22px 20px;
-      border-right: 0;
-      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
-    }
-
-    .metric-block:last-child {
-      border-bottom: 0;
-    }
-
-    .metric-value {
-      font-size: clamp(2rem, 8vw, 2.6rem);
-      margin-bottom: 8px;
-    }
-
-    .metric-label {
-      font-size: 1.12rem;
-      line-height: 1.5;
-    }
-
-    .hero-content {
-      grid-template-columns: 1fr;
-      padding: 1.5rem;
-    }
-
-    .hero-panel {
-      max-width: 100%;
-    }
-
-    .cta-buttons {
-      flex-direction: column;
+    .hero-copy {
+      padding: clamp(20px, 3vw, 28px);
     }
 
     .cta-button {
       width: 100%;
       text-align: center;
+      padding: 14px 20px;
+      font-size: 1rem;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .split-section {
+      row-gap: 22px;
+    }
+
+    .image-text-section {
+      gap: 40px;
     }
 
     .answer-cards {
@@ -1160,7 +1111,7 @@
     }
 
     .thesis-main {
-      padding: 26px 20px;
+      padding: 26px 24px;
     }
 
     .thesis-main h3 {
