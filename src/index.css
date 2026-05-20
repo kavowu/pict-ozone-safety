@@ -1053,47 +1053,146 @@
   }
 
   @media (max-width: 760px) {
+    /* ── Navigation ── */
     .brand-logo {
-      height: 52px;
+      height: 44px;
     }
 
+    .nav-links {
+      gap: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      padding: 4px;
+      border-radius: 999px;
+      scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      font-size: 13px;
+      padding: 7px 10px;
+    }
+
+    /* ── Hero ── */
     .hero-section {
-      padding: 48px 24px 40px;
-      min-height: calc(100vh - 64px);
+      padding: 40px 20px 36px;
+      min-height: auto;
+      background-attachment: scroll;
     }
 
-    .content-section,
-    .split-section,
-    .image-text-section,
-    .principle-section {
-      padding: 56px 24px;
+    .hero-content {
+      grid-template-columns: 1fr;
+      padding: 0;
+      gap: 20px;
     }
 
     .hero-copy {
-      padding: clamp(20px, 3vw, 28px);
+      padding: 20px;
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(1.7rem, 7.2vw, 2.4rem);
+      line-height: 1.28;
+      margin-bottom: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    .lead {
+      font-size: 0.97rem;
+      line-height: 1.72;
+      margin-top: 12px;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1rem;
     }
 
     .cta-button {
       width: 100%;
       text-align: center;
       padding: 14px 20px;
-      font-size: 1rem;
+      font-size: 0.97rem;
       min-height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
+    .hero-panel {
+      max-width: 100%;
+      padding: 16px 18px;
+    }
+
+    .hero-panel .thesis {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ── Metrics band ── */
+    .metrics-band {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .metric-block {
+      padding: 20px 18px;
+      border-right: 1px solid rgba(15, 23, 42, 0.1);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+    }
+
+    .metric-block:nth-child(2n) {
+      border-right: 0;
+    }
+
+    .metric-block:nth-last-child(-n+2) {
+      border-bottom: 0;
+    }
+
+    .metric-value {
+      font-size: clamp(1.6rem, 6.5vw, 2.2rem);
+      margin-bottom: 6px;
+    }
+
+    .metric-label {
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* ── Section padding ── */
+    .content-section,
+    .split-section,
+    .image-text-section,
+    .principle-section {
+      padding: 52px 20px;
+    }
+
+    /* ── Answer cards ── */
+    .answer-cards {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .answer-card {
+      padding: 22px 20px 20px;
+    }
+
+    .answer-card h3 {
+      font-size: 18px;
+    }
+
+    /* ── Split section (EPA) ── */
     .split-section {
       row-gap: 22px;
     }
 
-    .image-text-section {
-      gap: 40px;
-    }
-
-    .answer-cards {
-      grid-template-columns: 1fr;
+    .split-section h2 {
+      font-size: clamp(1.9rem, 7.5vw, 2.6rem);
+      margin-bottom: 1rem;
     }
 
     .issue-grid,
@@ -1101,8 +1200,37 @@
       grid-template-columns: 1fr;
     }
 
+    .issue-pair {
+      padding: 20px;
+    }
+
+    /* ── Image-text section ── */
+    .image-text-section {
+      gap: 36px;
+      background-size: 50px 50px;
+    }
+
+    .image-text-section h2 {
+      font-size: clamp(1.75rem, 7.2vw, 2.4rem);
+      margin-bottom: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    .image-text-section p {
+      font-size: 0.97rem;
+    }
+
+    .reaction-concept {
+      font-size: 0.9rem;
+      padding: 12px 14px;
+      word-break: break-all;
+    }
+
+    /* ── Principle / NO2 section ── */
     .safety-principles {
       grid-template-columns: 1fr;
+      padding: 8px;
+      gap: 8px;
     }
 
     .safety-thesis {
@@ -1111,55 +1239,37 @@
     }
 
     .thesis-main {
-      padding: 26px 24px;
+      padding: 24px 20px;
     }
 
     .thesis-main h3 {
-      font-size: clamp(1.7rem, 8vw, 2.5rem);
+      font-size: clamp(1.7rem, 7.5vw, 2.4rem);
       margin-bottom: 1rem;
     }
 
     .thesis-main blockquote {
-      font-size: clamp(1.45rem, 7.4vw, 2rem);
-      line-height: 1.42;
+      font-size: clamp(1.3rem, 6.5vw, 1.8rem);
+      line-height: 1.48;
       padding-left: 16px;
       border-left-width: 4px;
     }
 
     .thesis-main > p {
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       line-height: 1.75;
     }
 
-    .safety-principles {
-      padding: 8px;
-      gap: 8px;
-    }
-
     .principle-item {
-      min-height: 82px;
-      padding: 18px 18px 18px 44px;
-      font-size: 0.98rem;
+      min-height: 80px;
+      padding: 16px 16px 16px 44px;
+      font-size: 0.95rem;
     }
 
     .principle-item::before {
       left: 12px;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       width: 20px;
       height: 20px;
-    }
-
-    .reference-list {
-      grid-template-columns: 1fr;
-    }
-
-    .reference-item {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-
-    .reference-item .ref-number {
-      grid-row: auto;
     }
 
     .principle-banner {
@@ -1169,11 +1279,45 @@
     }
 
     .principle-section h2 {
-      font-size: clamp(1.55rem, 8vw, 2.1rem);
-      line-height: 1.15;
+      font-size: clamp(1.55rem, 7.5vw, 2.1rem);
+      line-height: 1.2;
       padding-bottom: 10px;
       margin-bottom: 16px;
       border-bottom-width: 2px;
+    }
+
+    /* ── Table ── */
+    table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      font-size: 0.88rem;
+    }
+
+    table th,
+    table td {
+      padding: 10px 12px;
+      min-width: 80px;
+    }
+
+    /* ── References ── */
+    .reference-list {
+      grid-template-columns: 1fr;
+    }
+
+    .reference-item {
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .reference-item .ref-number {
+      grid-row: auto;
+      font-size: 1.1rem;
+    }
+
+    .reference-item .ref-description {
+      font-size: 14px;
     }
   }
 
