@@ -629,11 +629,12 @@
   }
 
   .split-section h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
+    margin-top: 0.6rem;
     width: 100%;
     max-width: 100%;
     font-size: clamp(2.25rem, 4.2vw, 4.35rem);
-    line-height: 1.2;
+    line-height: 1.22;
     letter-spacing: -0.012em;
     word-spacing: 0.04em;
     text-wrap: balance;
