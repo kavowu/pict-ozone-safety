@@ -713,8 +713,8 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48.672px;
-    align-items: center;
+    gap: 48px;
+    align-items: start;
     background-color: #f7f6f2;
     background-image:
       linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
@@ -754,9 +754,10 @@
   }
 
   .image-text-section h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
+    margin-top: 0.6rem;
     font-size: clamp(2.5rem, 4.2vw, 5rem);
-    line-height: 1.08;
+    line-height: 1.18;
     letter-spacing: -0.02em;
     font-weight: 600;
   }
@@ -781,18 +782,24 @@
 
   .image-text-section img {
     width: 100%;
+    max-width: 900px;
     height: auto;
     border-radius: 0;
     border: 1px solid rgba(15, 23, 42, 0.08);
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    display: block;
+    margin: 0 auto;
   }
 
   .image-text-section .visual-pane {
-    order: 1;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .image-text-section .copy-pane {
-    order: 2;
+    order: 1;
   }
 
   .principle-section {
@@ -1240,8 +1247,8 @@
     }
 
     .image-text-section {
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 60px;
+      grid-template-columns: 1fr;
+      gap: 56px;
     }
 
     .issue-columns {
